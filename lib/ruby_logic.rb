@@ -6,6 +6,7 @@ class Phrase
   end
 
   def find_replace
-    @phrase.gsub(@find, @replace)
+    find = @find
+    @phrase.gsub!(/#{find}/, @replace)
   end
 end
